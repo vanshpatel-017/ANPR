@@ -1,0 +1,53 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.so
+*.egg-info/
+.venv/
+venv/
+env/
+
+# Jupyter
+.ipynb_checkpoints/
+
+# Environment
+.env
+!.env.example
+
+# OS / IDE
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+
+# Data and model artifacts (private / large)
+/data/
+/datasets/
+/models/
+/weights/
+/checkpoints/
+/artifacts/
+/outputs/
+/results/
+*.pt
+*.pth
+*.ckpt
+*.onnx
+*.engine
+*.tflite
+*.h5
+*.pkl
+*.joblib
+
+# Media and logs
+*.log
+*.tmp
+*.bak
+*.zip
+*.rar
+
+# Local notebook exports
+*.html
+*.pdf

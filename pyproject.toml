@@ -1,0 +1,36 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "anpr-junigadi"
+version = "0.1.0"
+description = "GitHub-ready ANPR notebook pipeline (dataset and production weights excluded)."
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = [
+    "numpy>=1.26",
+    "pandas>=2.2",
+    "opencv-python>=4.10",
+    "Pillow>=10.4",
+    "matplotlib>=3.9",
+    "tqdm>=4.66",
+    "PyYAML>=6.0",
+    "scikit-learn>=1.5",
+    "ultralytics>=8.2",
+    "torch>=2.3",
+    "torchvision>=0.18",
+    "transformers>=4.44",
+    "datasets>=2.21",
+    "accelerate>=0.33",
+    "sentencepiece>=0.2",
+    "rapidfuzz>=3.9",
+    "lmdb>=1.5"
+]
+
+[project.scripts]
+anpr-junigadi = "anpr_junigadi.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
